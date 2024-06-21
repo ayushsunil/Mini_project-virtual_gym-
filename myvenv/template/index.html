@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout Generator</title>
+</head>
+<body>
+    <h1>Upper Body and Lower Body Workout Generator</h1>
+    <form action="/generate_workout" method="post">
+        <label for="pushup_count">Enter number of push-ups completed:</label>
+        <input type="number" id="pushup_count" name="pushup_count" required>
+        <button type="submit">Generate Upper Body Workout</button>
+    </form>
+
+    <form action="/generate_lower_body_workout" method="post">
+        <label for="squat_count">Enter number of squats you can do:</label>
+        <input type="number" id="squat_count" name="squat_count" required>
+        <button type="submit">Generate Lower Body Workout</button>
+    </form>
+</body>
+</html>
